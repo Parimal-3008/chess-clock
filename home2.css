@@ -1,0 +1,131 @@
+body{
+    background-image: url('bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-color: rgba(255,255,255,0.35);
+    background-blend-mode: lighten;
+    margin:0px;
+    padding:0px;
+  }
+  head{
+      height: 0%;
+  }
+.container{
+    align-items: center;
+    margin: 50px 35%;
+}
+/* .format{
+    border: 2px solid red;
+    height:30vh;
+} */
+ .box1{
+    border: 2px solid black;
+    width:100%;
+    height:20%;
+    border-radius: 23px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-between;
+    visibility:hidden;
+    /* font-size: 1.5rem; */
+}
+.box{
+    border: 2px solid black;
+    width:100%;
+    height:20%;
+    border-radius: 23px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(189, 31, 31, 0.158);
+}
+.box img{
+    height: 20px;
+    width:20px;
+    padding-right: 12px;
+    transform: rotate(0deg);
+}
+.box span, .box1 p{
+    padding-left: 12px;;
+}
+.box1:hover{
+    background-color: rgb(189, 194, 194);
+    cursor: pointer;
+}
+.option{
+   
+    width: 100%;
+    border-radius: 23px;
+    border: 2px solid black;
+    }
+.white, .black{
+      width:50vw;
+     display: flex;
+      justify-content: space-evenly;
+} 
+.white1, .black1, .white2, .black2{
+    /* width:50%; */
+   display: flex;
+    justify-content: space-evenly;
+} 
+.InitialTimeFormat{
+    display: flex;
+    justify-content: space-between;
+    height: 5vh;
+}
+.t1
+{
+    width:41%;
+    border-radius: 23px;
+    text-align: center;
+    height: 4vh;
+    margin-top: 1.5%;
+
+}
+#tc1, #tc2{
+    text-align: center;
+    margin-left: 35%;
+    margin-right: 35%;
+    height: 4vh;
+    width: 30%;
+    border-radius: 23px;;
+    
+}
+h2{
+    text-align: center;
+}
+.t2{
+    width: 41%;
+    text-align: center;
+    border-radius: 23px;
+    height: 4vh;
+    margin-top: 1.5%;
+
+}
+.TimeControl1, .TimeControl2{
+    visibility: hidden;
+}
+.submit{
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    margin-left: 45%;
+    margin-right: 45%;
+   
+}
+button{
+    height: 30px;;
+    width:100px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 23px;;
+}
+/* .options-container {
+    position: relative;
+     list-style-type: none;
+     height:20%;
+    overflow:visible;
+} */
