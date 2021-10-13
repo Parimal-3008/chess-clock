@@ -91,6 +91,7 @@ body{
     margin-top: 1.5%;
     font-size: 1.15rem;
     font-family: 'Kanit', sans-serif;
+    border: 3px solid black;
 
 }
 #tc1, #tc2{
@@ -102,6 +103,7 @@ body{
     font-size: 1.15rem;
     border-radius: 23px;;
     font-family: 'Kanit', sans-serif;
+    border: 3px solid black;
     
 }
 h2{
@@ -115,6 +117,7 @@ h2{
     margin-top: 1.5%;
     font-size: 1.15rem;
     font-family: 'Kanit', sans-serif;
+    border: 3px solid black;
 
 }
 .TimeControl1, .TimeControl2{
@@ -149,6 +152,7 @@ button{
     font-family: 'Kanit', sans-serif;
     border: 3px solid rgb(44, 40, 2);
     font-size: 1.25rem;
+
 
 }
 /* .options-container {
