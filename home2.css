@@ -3,10 +3,20 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
-    background-color: rgba(255,255,255,0.35);
+    background-color: #070707;
     background-blend-mode: lighten;
     margin:0px;
     padding:0px;
+    color: rgb(105, 103, 103);
+    font-family: 'Kanit', sans-serif;
+  }
+  h2{
+      font-size: 2rem;
+  }
+  h1{
+      text-align: center;
+      color: rgb(49 31 4 / 85%);
+      font-size: 4.5rem;
   }
   head{
       height: 0%;
@@ -15,10 +25,7 @@ body{
     align-items: center;
     margin: 50px 35%;
 }
-/* .format{
-    border: 2px solid red;
-    height:30vh;
-} */
+
  .box1{
     border: 2px solid black;
     width:100%;
@@ -38,9 +45,11 @@ body{
     border-radius: 23px;
     display: flex;
     cursor: pointer;
+    font-size: 1.5rem;
     align-items: center;
+    color: black;
     justify-content: space-between;
-    background-color: rgba(189, 31, 31, 0.158);
+    /* background-color: rgba(189, 31, 31, 0.158); */
 }
 .box img{
     height: 20px;
@@ -61,37 +70,38 @@ body{
     border-radius: 23px;
     border: 2px solid black;
     }
-.white, .black{
-      width:50vw;
-     display: flex;
-      justify-content: space-evenly;
-} 
-.white1, .black1, .white2, .black2{
+
+.white1, .black1, .white2, .black2, .white, .black{
     /* width:50%; */
    display: flex;
     justify-content: space-evenly;
+    
 } 
 .InitialTimeFormat{
-    display: flex;
+    
     justify-content: space-between;
-    height: 5vh;
+    height: 39vh;
 }
 .t1
 {
     width:41%;
     border-radius: 23px;
     text-align: center;
-    height: 4vh;
+    height: 6vh;
     margin-top: 1.5%;
+    font-size: 1.15rem;
+    font-family: 'Kanit', sans-serif;
 
 }
 #tc1, #tc2{
     text-align: center;
     margin-left: 35%;
     margin-right: 35%;
-    height: 4vh;
+    height: 6vh;
     width: 30%;
+    font-size: 1.15rem;
     border-radius: 23px;;
+    font-family: 'Kanit', sans-serif;
     
 }
 h2{
@@ -101,12 +111,24 @@ h2{
     width: 41%;
     text-align: center;
     border-radius: 23px;
-    height: 4vh;
+    height: 6vh;
     margin-top: 1.5%;
+    font-size: 1.15rem;
+    font-family: 'Kanit', sans-serif;
 
 }
 .TimeControl1, .TimeControl2{
     visibility: hidden;
+    height: 45vh;
+   
+   
+}
+.InitialTimeFormat, .TimeControl1, .TimeControl2{
+    border: 3px solid rgb(44, 40, 2);
+     border-radius: 123px;
+     margin-left: 20px;
+     margin-right: 20px;
+     margin-top: 41px;;
 }
 .submit{
     /* display: flex;
@@ -114,14 +136,20 @@ h2{
     justify-content: center; */
     margin-left: 45%;
     margin-right: 45%;
+    
    
 }
 button{
-    height: 30px;;
+    height: 50px;;
     width:100px;
+    margin-top: 30px;
     text-align: center;
     justify-content: center;
     border-radius: 23px;;
+    font-family: 'Kanit', sans-serif;
+    border: 3px solid rgb(44, 40, 2);
+    font-size: 1.25rem;
+
 }
 /* .options-container {
     position: relative;
