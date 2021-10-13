@@ -36,7 +36,7 @@ function toggledisplay() {
 
     }
     r3();
-    MOVE();
+   
 }
 function r3() {
     img = document.getElementById("arrow");
@@ -88,16 +88,16 @@ function MOVE() {
     localStorage.setItem("blackInc1", document.getElementById("BIncT").value);
     console.log(document.getElementById("WIT").value);
     if (p1.innerText == "Classical") {
-        localStorage.setItem("NoOfMoves1", document.getElementById("tc1").value);
-        localStorage.setItem("WAT2", document.getElementById("WAT2").value);
-        localStorage.setItem("BAT2", document.getElementById("BAT2").value);
-        localStorage.setItem("WIncT2", document.getElementById("WIncT2").value);
-        localStorage.setItem("BIncT2", document.getElementById("BIncT2").value);
-        localStorage.setItem("NoOfMoves2", document.getElementById("tc2").value);
-        localStorage.setItem("WAT3", document.getElementById("WAT3").value);
-        localStorage.setItem("BAT3", document.getElementById("BAT3").value);
-        localStorage.setItem("WIncT3", document.getElementById("WIncT3").value);
-        localStorage.setItem("BIncT3", document.getElementById("BIncT3").value);
+        localStorage.setItem("NoOfMoves1", document.getElementById("tc1").value.trim().length == 0 ? 0: document.getElementById("tc1").value);
+        localStorage.setItem("WAT2", document.getElementById("WAT2").value.trim().length == 0 ? 0: document.getElementById("WAT2").value);
+        localStorage.setItem("BAT2", document.getElementById("BAT2").value.trim().length == 0 ? 0: document.getElementById("BAT2").value);
+        localStorage.setItem("WIncT2", document.getElementById("WIncT2").value.trim().length == 0 ? 0: document.getElementById("WIncT2").value);
+        localStorage.setItem("BIncT2", document.getElementById("BIncT2").value.trim().length == 0 ? 0: document.getElementById("BIncT2").value);
+        localStorage.setItem("NoOfMoves2", document.getElementById("tc2").value.trim().length == 0 ? 0: document.getElementById("tc2").value);
+        localStorage.setItem("WAT3", document.getElementById("WAT3").value.trim().length == 0 ? 0: document.getElementById("WAT3").value);
+        localStorage.setItem("BAT3", document.getElementById("BAT3").value.trim().length == 0 ? 0: document.getElementById("BAT3").value);
+        localStorage.setItem("WIncT3", document.getElementById("WIncT3").value.trim().length == 0 ? 0: document.getElementById("WIncT3").value);
+        localStorage.setItem("BIncT3", document.getElementById("BIncT3").value.trim().length == 0 ? 0: document.getElementById("BIncT3").value);
 
     }
     else {
