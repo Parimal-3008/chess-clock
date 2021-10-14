@@ -24,20 +24,29 @@ let binc3 = localStorage.getItem("BIncT3");
 let mo = 0;
 a = { "time": wi * 60, "inc1": winc, "inc2": winc2, "at2": wat2, "at3": wat3, "inc3": winc3 };
 b = { "time": bi * 60, "inc1": binc, "inc2": binc2, "at2": bat2, "at3": bat3, "inc3": binc3 };
-function clockstart() {
-    cj();
-}
+document.getElementById("b").innerText = "+ "+b.inc1 + " sec";
+document.getElementById("w").innerText = "+ "+a.inc1 + " sec";
 let yo;
 let yu;
-console.log(b.inc1);
-console.log(a.inc1);
+f1();
+f2();
+function clockstart() {
+   
+        console.log(mo);
+    
+    cj();
+}
 function cj() {
+    document.getElementsByClassName("button")[0].style.visibility = "hidden";
+    
     window.onkeydown = function (gfg) {
+        document.getElementsByClassName("button2")[0].style.visibility = "visible";
         if (gfg.keyCode === 32) {
             mo++;
 
         };
-        console.log(mo);
+        document.getElementById("b").innerText = "+ "+b.inc1 + " sec";
+        document.getElementById("w").innerText = "+ "+a.inc1 + " sec";
         if (mo == moves1 * 2) {
             b.time += (parseInt(b.at2)*60);
             a.time += (parseInt(a.at2)*60);
@@ -79,32 +88,47 @@ function cj() {
 function whitecountdown() {
     f2();
     a.time--;
+    if(a.time ==0)
+    {clearInterval(yu);
+    clearInterval(yo);
+    document.getElementById("WHITE").innerText = "BLACK WON";}
 }
 function blackcountdown() {
     f1();
     b.time--;
+    if(b.time ==0)
+    {
+        clearInterval(yu);
+    clearInterval(yo);
+    document.getElementById("BLACK").innerText = "WHITE WON";
+
+}
+
 
 }
 function f1() {
     min1 = Math.floor(b.time / 60);
     sec1 = b.time % 60;
     if (min1 < 10)
-        min1 = "00" + min1;
-    else if (min1 < 100)
         min1 = "0" + min1;
+   
     if (sec1 < 10)
         sec1 = "0" + sec1;
-    document.getElementById("BLACK").innerText = min1 + " " + sec1;
+    document.getElementById("BLACK").innerText = min1 + " : " + sec1;
 }
 function f2() {
     min = Math.floor(a.time / 60);
     sec = a.time % 60;
     if (min < 10)
-        min = "00" + min;
-    else if (min < 100)
         min = "0" + min;
+    
     if (sec < 10)
         sec = "0" + sec;
-    document.getElementById("WHITE").innerText = min + " " + sec;
+    document.getElementById("WHITE").innerText = min + " : " + sec;
 
+}
+function clockpause() {
+    clearInterval(yu);
+    clearInterval(yo);
+    
 }

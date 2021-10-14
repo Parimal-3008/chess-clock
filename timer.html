@@ -1,20 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game start</title>
     <link rel="stylesheet" href="time.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;1,900&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <h1 id ="timer2"></h1>
-    <button class="start" onclick="clockstart()">
-          START THE CLOCK
-    </button>
-    <p id="WHITE"></p>
-    <p id="BLACK"></p>
+    <div class="container">
+        <h1 id="timer2"></h1>
+        <div class="instructions">
+
+            <h2>Instructions</h2>
+            <p>→ Press the Start button </p>
+            <p>→ Black player have to press space bar so that whites time gets started.</p>
+            <p>→ And as the players make moves they have to press space bar key.</p>
+        </div>
+        <div class="buttons">
+            <button class="button" onclick="clockstart()">
+                START
+            </button>
+            <button class="button2" onclick="clockpause()">
+                Pause
+            </button>
+        </div>
+        
+        <div class="format">
+            <div class="timeformat1">
+                <p id="w"></p>
+            </div>
+            <div class="timeformat2">
+                <p id="b"></p>
+
+            </div>
+        </div>
+        <div class="parent">
+            <div class="white">
+               
+                <p id="WHITE"></p>
+            </div>
+            <div class="black">
+                
+                <p id="BLACK"></p>
+
+            </div>
+        </div>
+    </div>
     <script src="time123.js"></script>
-    
+
+
 </body>
+
 </html>
